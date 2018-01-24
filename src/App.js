@@ -6,7 +6,7 @@ class App extends Component {
   state = {
     persons: [
       {name:'Fornes',Age: 25},
-      {name:'Max',Age: 23},
+      {name:'Biel',Age: 23},
       {name:'Marins',Age: 22}
     ]
   }
@@ -16,9 +16,9 @@ class App extends Component {
     <div className="App" >
       <h1>Welcome to React</h1>
       <button>Switch Name</button>
-      <Person name="fornes" age="25" >Hobbies: Gaming</Person>
-      <Person name="paco" age="345" />
-      <Person name="biel" age="23" />
+      <Person name={this.state.persons[0].name} age={this.state.persons[0].Age} >Hobbies: Gaming</Person>
+      <Person name={this.state.persons[1].name} age={this.state.persons[1].Age} />
+      <Person name={this.state.persons[2].name} age={this.state.persons[2].Age} />
     </div>
     );
   }
